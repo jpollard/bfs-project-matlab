@@ -8,6 +8,10 @@
 % should be 2.
 
 function BFS( Graph, start)
+  if start < 1
+      fprintf('ERROR: "start" needs to be 1 (for node A) or larger, but within the max number of nodes in the graph\n')
+      return
+  end
   % get num of col in Graph
   numCol = size(Graph, 2);
     
